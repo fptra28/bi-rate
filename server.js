@@ -1,5 +1,6 @@
 // server.js
 
+require("dotenv").config();
 const express = require("express");
 const morgan = require("morgan");
 const { startCron } = require("./services/cron");
