@@ -3,7 +3,7 @@ const { fetchBiRate } = require("./scraper");
 
 function startCron() {
     // jalan setiap hari jam 02:00
-    cron.schedule("0 2 * * *", async () => {
+    cron.schedule("0 1 * * *", async () => {
         try {
             console.log("Running daily BI rate scraping...");
             await fetchBiRate();
